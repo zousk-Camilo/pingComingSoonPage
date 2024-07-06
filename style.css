@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+   --Gray: hsl(0, 0%, 59%);
+   --Very-Dark-Blue: hsl(209, 33%, 12%);  
+   --Pale-Blue: hsl(223, 100%, 88%);
+   --Light-Red: hsl(354, 100%, 66%);
+   --Blue: hsl(223, 87%, 63%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', 'sans-serif';
+}
+
+
+
+.section-1{
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+    margin: 50px auto;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1 span{
+    color: var(--Very-Dark-Blue);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: inherit;
+}
+
+.section-1 h1{
+    color: var(--Gray);
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.subscribe{
+    font-family: inherit;
+    font-size: 18px;
+}
+
+
+.form{
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form input{
+    width: inherit;
+    height: 50px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid var(--Blue);
+    padding-left: 40px;
+    font-size: 16px;
+}
+
+.form button{
+    width: inherit;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--Blue);
+    color: white;
+    font-size: 300;
+    transition: .2s ease all;
+    box-shadow: 0px 3px var(--Pale-Blue);
+}
+
+.form button:hover{
+    cursor: pointer;
+    background-color: var(--Pale-Blue);
+    box-shadow: 0px 3px var(--Pale-Blue);
+}
+
+.errorMessage{
+    text-align: center;
+    color: red;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.section-2{
+ width: 400px; 
+ margin: 10px auto;
+}
+ 
+.section-2 img{
+    width: inherit;
+    margin: 20px auto;
+   margin-bottom: 130px;
+} 
+
+.section-2 .social{
+    text-align: center;
+    display: felx;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.section-2 .social i{
+    align-content: center;
+    height: 30px;
+    width: 30px;
+    color: var(--Blue); 
+    margin-left: 40px;        
+    font-size: 25px;
+}
+.section-2 .social i:hover{
+    cursor: pointer;
+    color: white;
+    background-color: var(--Blue);
+    border-radius: 50%;
+}
+
+.rights{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 700px){ 
+ .form{
+    width: 385px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+ }
+ .errorMessage{
+    order: 3;
+    font-size: 15px;
+    margin-left: -65px;
+ }
+
+ .form input{
+    width: 350px;
+    height: 50px;
+    margin-left: -60px;
+    
+}
+
+.form button{
+    width: 160px;
+    height: 50px;
+    margin-right: 80px;
+}
+
+
+.section-1{
+    width: 600px;
+    gap: 30px;
+}
+
+.section-2{
+    width: 650px; 
+    margin: 10px auto;
+    margin-top: -10px;
+   }
+
+   
+.section-2 img{
+    width: inherit;
+    margin: 20px auto;
+    margin-bottom: 50px;
+} 
+.rights{
+    text-align: center;
+}
+}
